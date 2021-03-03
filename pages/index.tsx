@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div>hello next.js world!</div>
   )
