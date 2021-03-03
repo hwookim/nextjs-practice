@@ -1,5 +1,14 @@
+import Link from "next/link"
+
 export default function Home(): JSX.Element {
   return (
-    <div>hello next.js world!</div>
+    <div>
+      <div>
+        hello next.js world!
+      </div>
+      <Link href="/about">
+        소개
+      </Link>
+    </div>
   )
 }
