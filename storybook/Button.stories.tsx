@@ -1,7 +1,14 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import Button from "@/components/Button";
 
-storiesOf("Button", module).add("with text", () => {
-  return <Button content="click" />;
-});
+export default {
+  title: "Button",
+  component: Button,
+};
+
+const Template = (args) => <Button {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  content: "",
+};
