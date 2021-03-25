@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook 0p 6006 -c .storybook"
+    "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
