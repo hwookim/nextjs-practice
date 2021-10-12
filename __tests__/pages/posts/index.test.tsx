@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Post from '../../../src/pages/posts/[id]';
+import Post from '@/pages/posts/[id]';
 import { useRouter } from 'next/router';
 
 jest.mock('next/router');
