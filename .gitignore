@@ -33,4 +33,17 @@ yarn-error.log*
 # vercel
 .vercel
 
-.idea
+# yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.vscode
+.pnp.loader.mjs
+
+#storybook
+storybook-static
+build-storybook.log
