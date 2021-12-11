@@ -13142,6 +13142,7 @@ __metadata:
     jest: ^27.2.5
     next: ^11.0.0
     prettier: ^2.2.1
+    process: ^0.11.10
     react: ^17.0.2
     react-dom: ^17.0.2
     storybook-addon-next-router: ^3.1.0
