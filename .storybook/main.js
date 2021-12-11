@@ -7,6 +7,9 @@ module.exports = {
     '@storybook/addon-essentials',
     'storybook-addon-next-router',
   ],
+  core: {
+    builder: 'webpack5',
+  },
   features: {
     postcss: false,
   },
