@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -19,8 +19,17 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": [
+        "./src/*"
+      ],
+      "@mocks/*": [
+        "./__mocks__/*"
+      ],
+      "@tests/*": [
+        "./__tests__/*"
+      ]
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
