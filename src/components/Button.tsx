@@ -1,23 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import MButton from '@material-ui/core/Button';
-import { StylesProvider } from '@material-ui/styles';
+import React, { ButtonHTMLAttributes } from 'react';
+import styled from '@emotion/styled';
 
-const Container = styled(MButton)`
-  background-color: black;
-  color: white;
-`;
-
-interface Props {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   content: string;
 }
 
-const Button = ({ content }: Props): JSX.Element => {
-  return (
-    <StylesProvider injectFirst>
-      <Container>{content}</Container>
-    </StylesProvider>
-  );
-};
+export default function Button({
+  content,
+  ...props
+}: ButtonProps): JSX.Element {
+  return <Container {...props}>{content}</Container>;
+}
 
-export default Button;
+const Container = styled.button``;
